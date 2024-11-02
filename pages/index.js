@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
-import profil from "../public/profil.jpg";
+import profil from "../public/profile.png";
 import web from "../public/Web.png";
 import mobile from "../public/Mobile.png";
 import database from "../public/Database.png";

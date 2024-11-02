@@ -59,7 +59,7 @@ export default function Home() {
             </h3>
             <div className="mx-auto w-96 h-96 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image
-              src={profil} />
+              src={profil} alt-text="Profil"/>
             </div>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Mahasiswa Teknik Informatika UIN Sunan Gunung Djati Bandung angkatan 2022.
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={web} width={100} height={100} />
+              <Image src={web} width={100} height={100} alt-text="web"/>
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Web Develompent
               </h3>
@@ -96,10 +96,9 @@ export default function Home() {
               <p className="text-gray-800 py-1">Laravel</p>
               <p className="text-gray-800 py-1">React</p>
               <p className="text-gray-800 py-1">Springboot</p>
-              <p className="text-gray-800 py-1">Indesign</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={mobile} width={100} height={100} />
+              <Image src={mobile} width={100} height={100} alt-text="mobile"/>
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Mobile Develompent
               </h3>
@@ -110,7 +109,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Flutter</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={database} width={100} height={100} />
+              <Image src={database} width={100} height={100} alt-text="database"/>
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Database Management
               </h3>
@@ -140,6 +139,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 src={web1}
+                alt-text="All Fresh Laundry"
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -148,6 +148,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 src={web2}
+                alt-text="Library Management"
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -156,6 +157,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 src={web3}
+                alt-text="Project 3"
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -164,6 +166,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 src={web4}
+                alt-text="Bloodmoon"
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -172,11 +175,13 @@ export default function Home() {
                 width={273}
                 height={526}
                 src={web5}
+                alt-text="Mobile Library"
               />
             </div>
             <div className="basis-1/3 flex-1">
               <Image
                 src={web6}
+                alt-text="AR Educational"
               />
             </div>
           </div>

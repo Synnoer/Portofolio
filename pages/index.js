@@ -184,16 +184,16 @@ export default function Home() {
         <section>
           <div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://www.instagram.com/damisdamas/" target="_blank">
+              <a href="https://www.instagram.com/damisdamas/" target="_blank" rel="noreferrer">
                 <AiFillInstagram />
               </a>
-              <a href="https://www.linkedin.com/in/dimas-noer-02ba65268/" target="_blank">
+              <a href="https://www.linkedin.com/in/dimas-noer-02ba65268/" target="_blank" rel="noreferrer">
                 <AiFillLinkedin />
               </a>
-              <a href="https://github.com/Synnoer" target="_blank">
+              <a href="https://github.com/Synnoer" target="_blank" rel="noreferrer">
                 <AiFillGithub />
               </a>
-              <a href="https://wa.me/+6289670169478?" target="_blank">
+              <a href="https://wa.me/+6289670169478?" target="_blank" rel="noreferrer">
                 <AiOutlineWhatsApp/>
               </a>
             </div>

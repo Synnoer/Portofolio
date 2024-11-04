@@ -14,7 +14,7 @@ import database from "../public/Database.png";
 import Image from "next/image";
 import web1 from "../public/AllFreshLaundry.png";
 import web2 from "../public/LibManage.png";
-import web3 from "../public/web3.png";
+import web3 from "../public/sundolingo.png";
 import web4 from "../public/Bloodmoon.png";
 import web5 from "../public/apk-perpus.png";
 import web6 from "../public/Grafkom.png";

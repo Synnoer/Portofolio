@@ -14,7 +14,7 @@ import database from "../public/Database.png";
 import Image from "next/image";
 import web1 from "../public/AllFreshLaundry.png";
 import web2 from "../public/LibManage.png";
-import web3 from "../public/sundolingo.png";
+import web3 from "../public/Prime.png";
 import web4 from "../public/Bloodmoon.png";
 import web5 from "../public/apk-perpus.png";
 import web6 from "../public/Grafkom.png";
@@ -43,7 +43,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
+                  href="https://drive.google.com/file/d/1E2wNYqAXzICKsdk5WGllBiWdFUor8Jyh/view?usp=sharing"
                 >
                   CV
                 </a>

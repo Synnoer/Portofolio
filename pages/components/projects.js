@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Image from "next/legacy/image";
-import projectData from '../project_list';
+import projectData from '../../data/project_list';
 
 export default function Projects() {
     const [activeFilter, setActiveFilter] = useState('all');

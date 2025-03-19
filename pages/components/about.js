@@ -25,7 +25,7 @@ export default function About() {
                     <div className="md:w-1/2">
                         <h3 className="text-2xl font-bold text-gray-800 mb-4">Frontend Developer</h3>
                         <p className="text-gray-600 mb-6">
-                            I'm a passionate frontend developer with a focus on creating intuitive and responsive web applications.
+                            Im a passionate frontend developer with a focus on creating intuitive and responsive web applications.
                             With experience in modern frameworks like React and Next.js, I enjoy bringing designs to life and solving
                             complex UI challenges.
                         </p>

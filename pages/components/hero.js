@@ -23,7 +23,7 @@ export default function Hero() {
                 <div className="flex flex-col md:flex-row items-center justify-between">
                     {/* Text Section */}
                     <div className="md:w-1/2 mb-10 md:mb-0">
-                        <h2 className="text-xl text-blue-600 font-semibold mb-2">Hello, I'm</h2>
+                        <h2 className="text-xl text-blue-600 font-semibold mb-2">Hello, Im</h2>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">Synnoer</h1>
                         <div className="h-8 mb-6">
                             <span className="text-xl md:text-2xl font-medium text-gray-600">{typewriterText}</span>

@@ -1,6 +1,14 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
+const navLinks = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Skills", href: "#skills" },
+    { name: "Contact", href: "#contact" },
+];
+
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -11,13 +19,9 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const navLinks = [
-        { name: "Home", href: "#home" },
-        { name: "About", href: "#about" },
-        { name: "Projects", href: "#projects" },
-        { name: "Skills", href: "#skills" },
-        { name: "Contact", href: "#contact" },
-    ];
+    const handleMobileLinkClick = () => {
+        setIsOpen(false);
+    };
 
     return (
         <header
@@ -36,6 +40,8 @@ export default function Navbar() {
                 <button
                     className="md:hidden focus:outline-none"
                     onClick={() => setIsOpen(!isOpen)}
+                    aria-label="Toggle navigation menu"
+                    aria-expanded={isOpen}
                 >
                     <svg
                         className="w-6 h-6 text-gray-600"
@@ -60,7 +66,14 @@ export default function Navbar() {
                 <div className="md:hidden bg-white shadow-lg">
                     <div className="container mx-auto px-4 py-2">
                         {navLinks.map((link) => (
-                            <Link key={link.name} href={link.href} id="link" className="block py-2 text-gray-600 hover:text-gray-900">{link.name}</Link>
+                            <Link 
+                                key={link.name} 
+                                href={link.href} 
+                                className="..."
+                                onClick={handleMobileLinkClick}
+                            >
+                                {link.name}
+                            </Link>
                         ))}
                     </div>
                 </div>

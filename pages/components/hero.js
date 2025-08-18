@@ -1,21 +1,9 @@
-import { useState, useEffect } from 'react';
-import Image from "next/legacy/image";
+/* eslint-disable react/no-unescaped-entities */
+import Image from "next/image";
+import { useTypewriter } from '../hooks/useTypewriter';
 
 export default function Hero() {
-    const [typewriterText, setTypewriterText] = useState('');
-    const fullText = "I'm a Full Stack Developer and Machine Learning Engineer";
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        if (currentIndex < fullText.length) {
-            const timeout = setTimeout(() => {
-                setTypewriterText((prevText) => prevText + fullText[currentIndex]);
-                setCurrentIndex((prevIndex) => prevIndex + 1);
-            }, 100);
-
-            return () => clearTimeout(timeout);
-        }
-    }, [currentIndex]);
+    const typewriterText = useTypewriter("I'm a Machine Learning Engineer and Backend Developer", 100);
 
     return (
         <section id="home" className="pt-28 pb-20 md:pt-36 md:pb-28 bg-gradient-to-r from-blue-50 to-indigo-50">
@@ -23,8 +11,11 @@ export default function Hero() {
                 <div className="flex flex-col md:flex-row items-center justify-between">
                     {/* Text Section */}
                     <div className="md:w-1/2 mb-10 md:mb-0">
-                        <h2 className="text-xl text-blue-600 font-semibold mb-2">Hello, Im</h2>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">Synnoer</h1>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">
+                            {/* Corrected grammar and combined elements */}
+                            <span className="block text-xl text-blue-600 font-semibold mb-2">Hello, I'm</span>
+                            Synnoer
+                        </h1>
                         <div className="h-8 mb-6">
                             <span className="text-xl md:text-2xl font-medium text-gray-600">{typewriterText}</span>
                             <span className="ml-1 animate-blink">|</span>
@@ -52,10 +43,12 @@ export default function Hero() {
                     <div className="md:w-1/2 flex justify-center">
                         <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
                             <Image
-                                src="/Images/profile.png"
-                                alt="Profile Picture"
-                                layout="fill"
-                                className="w-full h-full object-cover"
+                                src="/Images/profile.webp"
+                                alt="A portrait of Synnoer"
+                                fill
+                                sizes="(max-width: 768px) 16rem, 20rem"
+                                className="object-cover"
+                                priority
                             />
                         </div>
                     </div>

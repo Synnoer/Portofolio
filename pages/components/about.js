@@ -1,61 +1,64 @@
-import Image from "next/legacy/image";
+/* eslint-disable react/no-unescaped-entities */
+import Image from "next/image";
+import { personalInfo } from "../../data/personal_info"
 
 export default function About() {
     return (
-        <section id="about" className="py-16 bg-gray-50">
+        <section id="about" className="py-20 md:py-28 bg-white">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Me</h2>
-                    <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
+                    <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
                 </div>
 
-                <div className="flex flex-col md:flex-row items-center">
-                    <div className="md:w-1/2 mb-8 md:mb-0">
+                <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+                    {/* Image Section */}
+                    <div className="md:w-2/5">
                         <div className="relative w-64 h-64 mx-auto md:w-80 md:h-80 rounded-lg overflow-hidden border-4 border-white shadow-xl">
                             <Image
-                                src="/Images/profile.png"
-                                alt="Profile Picture"
-                                layout="fill"
-                                objectFit="cover"
+                                src="/Images/profile.webp"
+                                alt="A professional headshot of Dimas Arya Nurhakim"
+                                fill
+                                sizes="(max-width: 768px) 16rem, 20rem"
+                                className="object-cover"
                             />
                         </div>
                     </div>
 
-                    {/* About Text */}
-                    <div className="md:w-1/2">
-                        <h3 className="text-2xl font-bold text-gray-800 mb-4">Frontend Developer</h3>
-                        <p className="text-gray-600 mb-6">
-                            Im a passionate frontend developer with a focus on creating intuitive and responsive web applications.
-                            With experience in modern frameworks like React and Next.js, I enjoy bringing designs to life and solving
-                            complex UI challenges.
+                    {/* About Text Section */}
+                    <div className="md:w-3/5">
+                        <h3 className="text-2xl font-bold text-gray-800 mb-4">A Passionate Developer from Bandung</h3>
+                        <p className="text-gray-600 mb-6 leading-relaxed">
+                            Aspiring ML Engineer with experience deploying computer vision and sales forecasting models using
+                            YOLOv5, EfficientNet, and Streamlit. Skilled in transfer learning, backend deployment (FASTAPI), and
+                            leading cross-functional teams. Committed to building scalable, intelligent systems for real-world
+                            applications. Currently expanding skills in AWS, cloud infrastructure, and MLOps pipelines. Passionate
+                            about delivering scalable, impactful AI solutions and collaborating across teams to drive product value.
                         </p>
 
-                        {/* Info Grid */}
-                        <div className="grid grid-cols-2 gap-4 mb-6">
-                            <div>
-                                <p className="font-medium text-gray-800">Name:</p>
-                                <p className="text-gray-600">Dimas Arya Nurhakim</p>
-                            </div>
-                            <div>
-                                <p className="font-medium text-gray-800">Email:</p>
-                                <p className="text-gray-600">dimas.yans338@gmail.com</p>
-                            </div>
-                            <div>
-                                <p className="font-medium text-gray-800">Location:</p>
-                                <p className="text-gray-600">Bandung, Indonesia</p>
-                            </div>
-                            <div>
-                                <p className="font-medium text-gray-800">Available:</p>
-                                <p className="text-gray-600">Freelance / Part-time</p>
-                            </div>
-                        </div>
+                        {/* Info Grid using Definition List */}
+                        <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 mb-8">
+                            {personalInfo.map((item) => (
+                                <div key={item.term}>
+                                    <dt className="font-bold text-gray-800">{item.term}:</dt>
+                                    <dd className="text-gray-600">
+                                        {item.href ? (
+                                            <a href={item.href} className="hover:underline text-blue-600 transition-colors">
+                                                {item.description}
+                                            </a>
+                                        ) : (
+                                            item.description
+                                        )}
+                                    </dd>
+                                </div>
+                            ))}
+                        </dl>
 
-                        {/* Download Resume Button */}
                         <a
-                            href="/resume.pdf"
+                            href="https://drive.usercontent.google.com/u/0/uc?id=1Bfc2wqi6HALBN8yfTLeurNTQMGSnOnk5&export=download"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-md inline-block"
+                            className="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-md inline-block"
                         >
                             Download Resume
                         </a>

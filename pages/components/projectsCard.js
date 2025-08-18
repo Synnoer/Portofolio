@@ -7,12 +7,18 @@ const ExternalLinkIcon = () => (
 );
 
 export default function ProjectCard({ project }) {
+
+    if (!project) {
+        return null;
+    }
+
+    const image = project.image || '/images/default-placeholder.png';
     return (
         <div className="bg-white rounded-lg overflow-hidden border border-gray-200 shadow-lg transition-transform duration-300 hover:-translate-y-2 flex flex-col">
             {/* Image */}
             <div className="relative h-48 w-full">
                 <Image
-                    src={project.image}
+                    src={image}
                     alt={project.title}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

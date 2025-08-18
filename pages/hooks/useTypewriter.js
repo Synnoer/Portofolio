@@ -23,3 +23,5 @@ export const useTypewriter = (text, speed = 100) => {
 
     return displayText;
 };
+
+export default useTypewriter;

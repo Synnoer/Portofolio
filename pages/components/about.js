@@ -27,13 +27,15 @@ export default function About() {
 
                     {/* About Text Section */}
                     <div className="md:w-3/5">
-                        <h3 className="text-2xl font-bold text-gray-800 mb-4">A Passionate Developer from Bandung</h3>
+                        <h3 className="text-2xl font-bold text-gray-800 mb-4">AI Software Engineer | Machine Learning & Data Infrastructure</h3>
                         <p className="text-gray-600 mb-6 leading-relaxed">
-                            Aspiring ML Engineer with experience deploying computer vision and sales forecasting models using
-                            YOLOv5, EfficientNet, and Streamlit. Skilled in transfer learning, backend deployment (FASTAPI), and
-                            leading cross-functional teams. Committed to building scalable, intelligent systems for real-world
-                            applications. Currently expanding skills in AWS, cloud infrastructure, and MLOps pipelines. Passionate
-                            about delivering scalable, impactful AI solutions and collaborating across teams to drive product value.
+                        I am an AI Software Engineer driven by the thrill of discovering actionable insights hidden within complex data. 
+                        With a foundation in full-stack web development and specialized expertise in machine learning, 
+                        I focus on building intelligent systems that are not just cutting-edge, but fundamentally stable and practical.
+                        My engineering philosophy centers on creating highly usable, resilient infrastructure. 
+                        Whether it is engineering microservices to isolate LLM workloads and protect core servers from crashing under heavy traffic, 
+                        or systematically dismantling technical debt through rigorous architectural planning, I build AI solutions designed for the real world. 
+                        I am currently exploring local LLM deployments and integrated data pipelines, always seeking the next challenge at the intersection of AI and scalable software engineering.
                         </p>
 
                         {/* Info Grid using Definition List */}

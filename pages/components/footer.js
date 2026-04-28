@@ -10,8 +10,8 @@ export default function Footer() {
                 <div className="grid md:grid-cols-3 gap-8 items-center text-center md:text-left">
                     {/* Column 1: Brand Info */}
                     <div>
-                        <h2 className="text-2xl font-bold text-white mb-2">Synnoer</h2>
-                        <p className="text-gray-400">Machine Learning Engineer</p>
+                        <h2 className="text-2xl font-bold text-white mb-2">Dimas Arya Nurhakim</h2>
+                        <p className="text-gray-400">AI Software Engineer</p>
                     </div>
 
                     {/* Column 2: Social Links */}

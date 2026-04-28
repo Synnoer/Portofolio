@@ -14,13 +14,13 @@ export default function Home() {
     return (
         <div className="min-h-screen bg-gray-50">
             <Head>
-                <title>Synnoer | Machine Learning Engineer</title>
+                <title>Synnoer | AI Software Engineer</title>
                 <meta 
                     name="description" 
-                    content="The portfolio of Dimas Nurhakim, a software developer based in Bandung, specializing in React, Next.js, and modern web technologies." 
+                    content="The portfolio of Dimas Nurhakim, an AI Software Engineer building stable, scalable intelligence from complex data." 
                 />
                 <link rel="icon" href="Images/logo.ico" />
-                <meta property="og:title" content="Synnoer| Machine Learning Engineer" />
+                <meta property="og:title" content="Synnoer| AI Software Engineer" />
                 <meta property="og:description" content="Check out my projects and skills." />
                 <meta property="og:image" content="Images/portofolio.png" />
                 <meta property="og:url" content="https://portofolio-gold-pi.vercel.app/" />

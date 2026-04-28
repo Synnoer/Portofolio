@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useTypewriter } from '../hooks/useTypewriter';
 
 export default function Hero() {
-    const typewriterText = useTypewriter("I'm a Machine Learning Engineer and Backend Developer", 100);
+    const typewriterText = useTypewriter("AI Software Engineer building stable, scalable intelligence from complex data.", 100);
 
     return (
         <section id="home" className="pt-28 pb-20 md:pt-36 md:pb-28 bg-gradient-to-r from-blue-50 to-indigo-50">
@@ -14,14 +14,14 @@ export default function Hero() {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">
                             {/* Corrected grammar and combined elements */}
                             <span className="block text-xl text-blue-600 font-semibold mb-2">Hello, I'm</span>
-                            Synnoer
+                            Dimas Arya Nurhakim
                         </h1>
                         <div className="h-8 mb-6">
                             <span className="text-xl md:text-2xl font-medium text-gray-600">{typewriterText}</span>
                             <span className="ml-1 animate-blink">|</span>
                         </div>
                         <p className="text-gray-600 text-lg mb-8 max-w-lg">
-                            I build exceptional digital experiences that are fast, accessible, visually appealing, and responsive.
+                            Bridging the gap between deep learning research and practical, user-centric software infrastructure.
                         </p>
                         <div className="flex space-x-4">
                             <a
@@ -44,7 +44,7 @@ export default function Hero() {
                         <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
                             <Image
                                 src="/Images/profile.webp"
-                                alt="A portrait of Synnoer"
+                                alt="A portrait of Dimas Arya Nurhakim"
                                 fill
                                 sizes="(max-width: 768px) 16rem, 20rem"
                                 className="object-cover"

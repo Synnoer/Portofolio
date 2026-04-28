@@ -15,114 +15,99 @@ export const personalInfo = [{
 },
 {
     term: "Available",
-    description: "Freelance / Part-time"
+    description: "Full-time / Part-time / Freelance"
 },
 ];
 
-export const skills = [{
-    category: "Languages & Databases",
-    items: [{
-        name: "Python",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+export const skills = [
+    {
+        category: "Languages & Databases",
+        items: [
+            {
+                name: "Python",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            },
+            {
+                name: "SQL",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg"
+            },
+            {
+                name: "PostgreSQL",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+            }
+        ],
     },
     {
-        name: "SQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg"
+        category: "ML & Data Science",
+        items: [
+            {
+                name: "TensorFlow",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+            },
+            {
+                name: "PyTorch",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
+            },
+            {
+                name: "LangChain",
+                icon: "/icons/langchain.svg" // Added to reflect your core microservices work
+            },
+            {
+                name: "Scikit-learn",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+            },
+            {
+                name: "Pandas",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+            },
+            {
+                name: "NumPy",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
+            },
+        ],
     },
     {
-        name: "PostgreSQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+        category: "MLOps & Data Engineering",
+        items: [
+            {
+                name: "Docker",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+            },
+            {
+                name: "FastAPI", // Moved here to emphasize model deployment & microservices
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
+            },
+            {
+                name: "MLflow",
+                icon: "/icons/mlflow.svg"
+            },
+            {
+                name: "AWS Sagemaker",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+            },
+            {
+                name: "Streamlit",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg"
+            },
+        ],
     },
     {
-        name: "Javascript",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+        category: "Web & Tools",
+        items: [
+            {
+                name: "React",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+            },
+            {
+                name: "TypeScript",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+            },
+            {
+                name: "Git",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+            }
+        ],
     },
-    {
-        name: "PHP",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
-    },
-        // {
-        //     name: "Dart",
-        //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg"
-        // },
-    ],
-},
-{
-    category: "ML & Data Science",
-    items: [{
-        name: "TensorFlow",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
-    },
-    {
-        name: "PyTorch",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
-    },
-    {
-        name: "Scikit-learn",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
-    },
-    {
-        name: "Pandas",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
-    },
-    {
-        name: "NumPy",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
-    },
-    ],
-},
-{
-    category: "MLOps & Data Engineering",
-    items: [{
-        name: "Docker",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
-    },
-    {
-        name: "MLflow",
-        icon: "/icons/mlflow.svg"
-    },
-    {
-        name: "AWS Sagemaker",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-    },
-    {
-        name: "Streamlit",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg"
-    },
-    ],
-},
-{
-    category: "Web & Tools",
-    items: [{
-        name: "FastAPI",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
-    },
-    {
-        name: "React",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-    },
-    {
-        name: "Typescript",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-    },
-    // {
-    //     name: "Flutter",
-    //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
-    // },
-    {
-        name: "Git",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-    },
-    {
-        name: "GitHub",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-    },
-    {
-        name: "GitLab",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg"
-    },
-    ],
-},
 ];
 
 export const contactInfo = [
